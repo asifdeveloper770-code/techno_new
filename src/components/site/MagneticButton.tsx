@@ -29,7 +29,7 @@ export function MagneticButton({ to, children, variant = "solid", className = ""
   };
 
   const base =
-    "relative inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-medium tracking-wide transition-colors";
+    "relative inline-flex flex-nowrap items-center justify-center gap-2 whitespace-nowrap rounded-full px-8 py-4 text-sm font-medium tracking-wide transition-colors";
   const styles =
     variant === "solid"
       ? "text-primary-foreground"
@@ -57,7 +57,9 @@ export function MagneticButton({ to, children, variant = "solid", className = ""
             transition={{ duration: 0.4 }}
           />
         )}
-        <span className="relative z-10">{children}</span>
+        <span className="relative z-10 inline-flex items-center gap-2 whitespace-nowrap">
+          {children}
+        </span>
       </Link>
     </motion.div>
   );
