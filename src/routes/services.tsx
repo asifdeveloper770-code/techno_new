@@ -103,7 +103,7 @@ function Services() {
             style={{ background: "var(--gradient-metal)" }}
           >
             <div className="absolute inset-0 grid-lines opacity-30" />
-            <h2 className="relative text-3xl leading-tight font-semibold sm:text-4xl">
+            <h2 className="relative text-3xl text-white leading-tight font-semibold sm:text-4xl">
               Scope your next build with our engineering team.
             </h2>
             <div className="relative mt-10 flex justify-center">
