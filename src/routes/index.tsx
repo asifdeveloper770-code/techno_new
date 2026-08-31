@@ -91,17 +91,7 @@ function Home() {
 
         <div className="relative mx-auto grid w-[min(1200px,92vw)] items-center gap-14 lg:grid-cols-[1.05fr_1fr]">
           <div>
-            <motion.span
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.6, duration: 0.8 }}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-[0.65rem] font-medium tracking-[0.32em] text-secondary-foreground uppercase"
-            >
-              <Sparkles className="size-3.5 text-accent" />
-              Technology • Innovation • Solutions
-            </motion.span>
-
-            <h1 className="mt-8 text-4xl leading-[1.02] font-semibold sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 text-4xl leading-[1.02] font-semibold sm:text-6xl lg:text-7xl">
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -390,3 +380,5 @@ function Home() {
     </>
   );
 }
+
+
